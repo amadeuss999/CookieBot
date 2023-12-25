@@ -1615,10 +1615,10 @@ AutoPlay.handleAscend = function() {
       " after " + legacyTime + "(total: " + fullTime + ")",1);
     return;
   }
-  if (Game.ascensionMode==1 && !AutoPlay.canContinue() && !Game.AchievementsById[AutoPlay.nextAchievement].won) {
-    AutoPlay.doAscend("reborn mode did not work, retry.",0);
-    return;
-  }
+  //if (Game.ascensionMode==1 && !AutoPlay.canContinue() && !Game.AchievementsById[AutoPlay.nextAchievement].won) {
+   // AutoPlay.doAscend("reborn mode did not work, retry.",0);
+   // return;
+ // }
   if (AutoPlay.preNightMode() && AutoPlay.Config.NightMode>0)
     return; //do not ascend right before the night
   if (AutoPlay.endPhase() && !Game.Achievements["Endless cycle"].won &&
